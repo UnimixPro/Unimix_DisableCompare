@@ -1,0 +1,22 @@
+{
+    "name": "Unimix/module-disablecompare",
+    "description": "",
+    "version": "1.0.0",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Trubnikov Rustam",
+            "email": "support@Unimix.pro"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Unimix\\DisableCompare\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

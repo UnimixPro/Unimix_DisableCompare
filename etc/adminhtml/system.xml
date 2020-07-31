@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+        <tab id="Unimix" sortOrder="999" translate="label">
+            <label>Unimix</label>
+        </tab>
+        <section id="disable_compare" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+            <label>Disable Compare</label>
+            <tab>Unimix</tab>
+            <resource>Unimix_DisableCompare::config_Unimix_disablecompare</resource>
+            <group id="disable_compare_group" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+                <label>Disable Compare</label>
+                <field id="isEnable" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+                    <label>Disable Compare</label>
+                    <comment/>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+	</system>
+</config>

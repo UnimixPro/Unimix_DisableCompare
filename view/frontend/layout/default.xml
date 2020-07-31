@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+
+        <referenceBlock name="catalog.compare.link" >
+            <action method="setTemplate" ifconfig="disable_compare/disable_compare_group/isEnable">
+                <argument name="template" xsi:type="string">Unimix_DisableCompare::empty.phtml</argument>
+            </action>
+        </referenceBlock>
+        <referenceBlock name="catalog.compare.sidebar" >
+            <action method="setTemplate" ifconfig="disable_compare/disable_compare_group/isEnable">
+                <argument name="template" xsi:type="string">Unimix_DisableCompare::empty.phtml</argument>
+            </action>
+        </referenceBlock>
+
+        <referenceBlock name="category.product.addto.compare"   remove="true">
+            <action method="setTemplate" ifconfig="disable_compare/disable_compare_group/isEnable">
+                <argument name="template" xsi:type="string">Unimix_DisableCompare::empty.phtml</argument>
+            </action>
+        </referenceBlock>
+        <referenceBlock name="catalogsearch.product.addto.compare" >
+            <action method="setTemplate" ifconfig="disable_compare/disable_compare_group/isEnable">
+                <argument name="template" xsi:type="string">Unimix_DisableCompare::empty.phtml</argument>
+            </action>
+        </referenceBlock>
+
+        <referenceBlock name="crosssell.product.addto.compare" >
+            <action method="setTemplate" ifconfig="disable_compare/disable_compare_group/isEnable">
+                <argument name="template" xsi:type="string">Unimix_DisableCompare::empty.phtml</argument>
+            </action>
+        </referenceBlock>
+
+        <referenceBlock name="view.addto.compare" >
+            <action method="setTemplate" ifconfig="disable_compare/disable_compare_group/isEnable">
+                <argument name="template" xsi:type="string">Unimix_DisableCompare::empty.phtml</argument>
+            </action>
+        </referenceBlock>
+        <referenceBlock name="related.product.addto.compare"  >
+            <action method="setTemplate" ifconfig="disable_compare/disable_compare_group/isEnable">
+                <argument name="template" xsi:type="string">Unimix_DisableCompare::empty.phtml</argument>
+            </action>
+        </referenceBlock>
+        <referenceBlock name="upsell.product.addto.compare"  >
+            <action method="setTemplate" ifconfig="disable_compare/disable_compare_group/isEnable">
+                <argument name="template" xsi:type="string">Unimix_DisableCompare::empty.phtml</argument>
+            </action>
+        </referenceBlock>
+
+    </body>
+</page>

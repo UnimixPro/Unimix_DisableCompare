@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="Unimix" sortOrder="999" translate="label">
+            <label>Unimix</label>
+        </tab>
+        <section id="instagram" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+            <label>Instagram</label>
+            <tab>Unimix</tab>
+            <resource>Unimix_InstagramFeeds::config_Unimix_instagramfeeds</resource>
+            <group id="instagram" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+                <label>Instagram Settings</label>
+                <field id="token" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="textarea">
+                    <label>Token</label>
+                    <comment/>
+                </field>
+            </group>
+            <group id="instagram_generate_token" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+                <label>Generate token</label>
+                <field id="app_id" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+                    <label>App ID</label>
+                    <comment/>
+                </field>
+                <field id="instagram_app_secret" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+                    <label>Instagram App Secret</label>
+                    <comment/>
+                </field>
+                <field id="instagram_app_id" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+                    <label>Instagram App ID</label>
+                    <comment/>
+                </field>
+                <field id="buttoken" translate="label" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Generate Token</label>
+                    <button_url>mpinstagramfeed/auth/callback</button_url>
+                    <frontend_model>Unimix\InstagramFeeds\Block\Adminhtml\System\Config\Button</frontend_model>
+                </field>
+
+            </group>
+
+            <group id="instagram_display" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+                <label>Instagram Display</label>
+                <field id="count" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+                    <label>Count</label>
+                    <comment/>
+                </field>
+            </group>
+
+        </section>
+
+    </system>
+</config>
